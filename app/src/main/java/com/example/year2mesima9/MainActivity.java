@@ -177,6 +177,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * This method checks if there is an overall premission to access the storage
+     * @return true if there is an overall premission, false otherwise
+     */
     public boolean checkAllPremissions(){
         if ((checkPermission()) == false) {
             requestPermission();
